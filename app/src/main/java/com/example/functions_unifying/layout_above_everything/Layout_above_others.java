@@ -9,7 +9,7 @@ import android.provider.Settings;
 
 import com.example.functions_unifying.R;
 
-public class activity_layout_above_others extends AppCompatActivity {
+public class Layout_above_others extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

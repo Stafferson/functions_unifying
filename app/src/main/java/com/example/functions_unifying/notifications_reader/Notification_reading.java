@@ -7,6 +7,7 @@ import android.app.NotificationChannel;
 import android.app.NotificationManager;
 import android.content.Context;
 import android.content.Intent;
+import android.content.res.Resources;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -16,17 +17,15 @@ import android.widget.TextView;
 
 import com.example.functions_unifying.R;
 
-public class activity_notification_reading extends AppCompatActivity implements MyListener{
-
+public class Notification_reading extends AppCompatActivity implements MyListener {
     private TextView txtView ;
     public static final String NOTIFICATION_CHANNEL_ID = "10001" ;
     private final static String default_notification_channel_id = "default" ;
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
+    protected void onCreate (Bundle savedInstanceState) {
+        super .onCreate(savedInstanceState) ;
         setContentView(R.layout.activity_notification_reading);
-
         new NotificationService().setListener(this);
         txtView = findViewById(R.id.textView);
         Context context = getApplicationContext();
@@ -37,7 +36,7 @@ public class activity_notification_reading extends AppCompatActivity implements 
             @Override
             public void onClick (View v) {
                 NotificationManager mNotificationManager = (NotificationManager) getSystemService( NOTIFICATION_SERVICE ) ;
-                NotificationCompat.Builder mBuilder = new NotificationCompat.Builder(activity_notification_reading. this, default_notification_channel_id ) ;
+                NotificationCompat.Builder mBuilder = new NotificationCompat.Builder(Notification_reading.this, default_notification_channel_id ) ;
                 mBuilder.setContentTitle("My Notification");
                 mBuilder.setContentText("Notification Listener Service Example");
                 mBuilder.setTicker("Notification Listener Service Example");

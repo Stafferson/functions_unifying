@@ -4,12 +4,15 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/tairk/AndroidStudioProjects/fizmat/functions_unifying/app/src/main/res/drawable/ic_launcher_foreground.xml" value="0.14010416666666667" />
+        <entry key="..\:/Users/tairk/AndroidStudioProjects/fizmat/functions_unifying/app/src/main/res/layout/activity_call_blocking.xml" value="0.11141304347826086" />
         <entry key="..\:/Users/tairk/AndroidStudioProjects/fizmat/functions_unifying/app/src/main/res/layout/activity_call_history.xml" value="0.16621376811594202" />
         <entry key="..\:/Users/tairk/AndroidStudioProjects/fizmat/functions_unifying/app/src/main/res/layout/activity_main.xml" value="0.22" />
         <entry key="..\:/Users/tairk/AndroidStudioProjects/fizmat/functions_unifying/app/src/main/res/layout/activity_main2.xml" value="0.10144927536231885" />
         <entry key="..\:/Users/tairk/AndroidStudioProjects/fizmat/functions_unifying/app/src/main/res/layout/activity_notification_reading.xml" value="0.22" />
+        <entry key="..\:/Users/tairk/AndroidStudioProjects/fizmat/functions_unifying/app/src/main/res/layout/admin.xml" value="0.1" />
         <entry key="..\:/Users/tairk/AndroidStudioProjects/fizmat/functions_unifying/app/src/main/res/layout/popup_window.xml" value="0.12395833333333334" />
         <entry key="..\:/Users/tairk/AndroidStudioProjects/fizmat/functions_unifying/app/src/main/res/menu/menu_main.xml" value="0.12395833333333334" />
+        <entry key="..\:/Users/tairk/AndroidStudioProjects/fizmat/functions_unifying/app/src/main/res/xml/admin.xml" value="0.11141304347826086" />
       </map>
     </option>
   </component>

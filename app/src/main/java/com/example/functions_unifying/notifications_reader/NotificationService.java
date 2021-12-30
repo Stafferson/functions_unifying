@@ -9,6 +9,7 @@ public class NotificationService extends NotificationListenerService {
     private String TAG = this.getClass().getSimpleName();
     Context context;
     static MyListener myListener;
+    static int a;
 
     @Override
     public void onCreate() {
@@ -32,7 +33,10 @@ public class NotificationService extends NotificationListenerService {
         myListener.setValue("Remove: " + sbn.getPackageName());
     }
 
-    public void setListener(MyListener myListener) {
-        NotificationService.myListener = myListener;
+    public void setListener(MyListener myListener1) {
+        myListener = myListener1;
     }
+    /*public void setListener(MyListener myListener) {
+        NotificationService.myListener = myListener;
+    }*/
 }

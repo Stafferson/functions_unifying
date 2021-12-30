@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:service="http://schemas.android.com/apk/distribution"
     package="com.example.functions_unifying">
 
     <uses-permission android:name="android.permission.READ_CALL_LOG" />
@@ -15,13 +16,16 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Functions_unifying">
         <activity
-            android:name=".layout_above_everything.activity_layout_above_others"
+            android:name=".blocking_calls.Call_blocking"
             android:exported="false" />
         <activity
-            android:name=".notifications_reader.activity_notification_reading"
+            android:name=".layout_above_everything.Layout_above_others"
             android:exported="false" />
         <activity
-            android:name=".call_history.activity_call_history"
+            android:name=".notifications_reader.Notification_reading"
+            android:exported="false" />
+        <activity
+            android:name=".call_history.Call_history"
             android:exported="false" />
         <activity
             android:name=".MainActivity"
@@ -42,11 +46,23 @@
                 <action android:name="android.service.notification.NotificationListenerService" />
             </intent-filter>
         </service>
-
         <service
             android:name=".layout_above_everything.ForegroundService"
             android:enabled="true"
-            android:exported="true"/>
+            android:exported="true" />
+
+        <receiver
+            android:name="com.example.functions_unifying.admin.Admin"
+            android:exported="true">
+            <meta-data
+                android:name="android.app.device_admin"
+                android:resource="" />
+
+            <intent-filter>
+                <action android:name="android.app.action.DEVICE_ADMIN_ENABLED" />
+            </intent-filter>
+        </receiver>
+
     </application>
 
 </manifest>

@@ -13,7 +13,7 @@ import com.example.functions_unifying.R;
 
 import java.util.List;
 
-public class activity_call_history extends AppCompatActivity {
+public class Call_history extends AppCompatActivity {
 
     ListView listView;
 
